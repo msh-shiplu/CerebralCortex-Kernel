@@ -125,9 +125,9 @@ class User:
         self._user_metadata = val
 
     @property
-    def isactive(self):
+    def is_active(self):
         return self._active
 
-    @isactive.setter
-    def isactive(self, val):
+    @is_active.setter
+    def is_active(self, val):
         self._active = val
