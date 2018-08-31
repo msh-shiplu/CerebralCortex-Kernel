@@ -23,10 +23,9 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-from cerebralcortex.core.metadata_manager.data_descriptor import DataDescriptor
-from cerebralcortex.core.metadata_manager.execution_context import ExecutionContext
-
-from cerebralcortex.core.metadata_manager.annotations import Annotations
+from .data_descriptor import DataDescriptor
+from .execution_context import ExecutionContext
+from .annotations import Annotations
 
 
 class Metadata(Annotations, DataDescriptor, ExecutionContext):
@@ -34,4 +33,4 @@ class Metadata(Annotations, DataDescriptor, ExecutionContext):
         """
         Metadata of a stream
         """
-        pass
+        super().__init__()
