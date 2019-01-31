@@ -3,9 +3,9 @@
   "description": "Phone accelerometer (3-axis)",
   "data_descriptor": [
     {
-      "name": "Accelerometer X",
-      "type": "float",
-      "attributes": {
+      "_name": "Accelerometer X",
+      "_type": "float",
+      "_attributes": {
         "frequency": 16,
         "description": "Acceleration minus Gx on the x-axis",
         "min_value": -5,
@@ -14,9 +14,9 @@
       }
     },
     {
-      "name": "Accelerometer Y",
-      "type": "float",
-      "attributes": {
+      "_name": "Accelerometer Y",
+      "_type": "float",
+      "_attributes": {
         "frequency": 16,
         "description": "Acceleration minus Gx on the y-axis",
         "min_value": -5,
@@ -25,9 +25,9 @@
       }
     },
     {
-      "name": "Accelerometer Z",
-      "type": "float",
-      "attributes": {
+      "_name": "Accelerometer Z",
+      "_type": "float",
+      "_attributes": {
         "frequency": 16,
         "description": "Acceleration minus Gx on the z-axis",
         "min_value": -5,
@@ -38,13 +38,13 @@
   ],
   "module": [
     {
-      "name": "org.md2k.mcerebrum.phonesensor",
-      "version": "1.0",
-      "author": [{
+      "_name": "org.md2k.mcerebrum.phonesensor",
+      "_version": "1.0",
+      "_authors": [{
         "name": "Monowar Hossain",
         "email": ""
       }],
-      "attributes": {
+      "_attributes": {
         "reference": [],
         "description": ""
       }
