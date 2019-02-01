@@ -45,6 +45,7 @@ df = CC.sparkSession.createDataFrame(data)
 df = df.withColumn('localtime', col('timestamp') + localtime_offset).withColumn('user', lit(user_uuid))
 
 # Create a datastream based on the Spark dataframe and metadata objects
+# TODO: Shouldn't DataStream take a Pandas dataframe as input instead of forcing a developer to drop to Spark commands?
 datastream = DataStream(df, metadata)
 
 # Store this data in the system
