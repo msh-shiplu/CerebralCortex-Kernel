@@ -1,5 +1,5 @@
 # Copyright (c) 2019, MD2K Center of Excellence
-# - Nasir Ali <nasir.ali08@gmail.com>
+# - Timothy Hnat <twhnat@memphis.edu>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -35,6 +35,19 @@ def mcerebrum_raw_data_parser(line: str) -> list:
 
     Returns:
         list: (timestamp, localtime, bytes)
+
+    Example:
+        import_dir(
+            cc_config="conf/",
+            input_data_dir="/home/hnat/import/data/",
+            header=None,
+            allowed_streamname_pattern='^raw.*',
+            metadata_parser=mcerebrum_metadata_parser,
+            data_file_extension=[".gz"],
+            data_parser=mcerebrum_raw_data_parser,
+            batch_size=1023,
+            gen_report=True
+        )
     """
     data = []
     short_int_offset = 2**7
