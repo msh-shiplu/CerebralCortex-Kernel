@@ -1,5 +1,5 @@
 # Copyright (c) 2019, MD2K Center of Excellence
-# - Nasir Ali <nasir.ali08@gmail.com>
+# - Timothy Hnat <twhnat@memphis.edu>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
